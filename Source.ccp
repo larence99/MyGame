@@ -114,7 +114,7 @@ int main()
 {
 	randomMapGenerate();
 
-	RenderWindow window(sf::VideoMode(840, 680), "My game"); 
+	RenderWindow window(sf::VideoMode(840, 680), "My game",sf::Style::Fullscreen); 
 	view.reset(sf::FloatRect(0, 0, 840, 680));//размер "вида" камеры при создании объекта вида камеры. 
 
 
