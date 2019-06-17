@@ -255,14 +255,14 @@ int main()
 		window.setView(view);//"оживляем" камеру в окне sfml
 
 		if (p.health<=0) {
-			text1.setString("We lose");//задает строку тексту
+			text1.setString("You Lose");//задает строку тексту
 			text1.setPosition(view.getCenter().x - 300, view.getCenter().y - 100);//задаем позицию текста, отступая от центра камеры
 			window.draw(text1);//рисую этот текст
 		}
 		window.draw(p.sprite);//выводим спрайт на экран
 
 		if (p.mission == false) {
-			text1.setString("We Win!!!");//задает строку тексту
+			text1.setString("You Win!!!");//задает строку тексту
 			text1.setPosition(view.getCenter().x - 300, view.getCenter().y - 100);//задаем позицию текста, отступая от центра камеры
 			window.draw(text1);//рисую этот текст
 		}
